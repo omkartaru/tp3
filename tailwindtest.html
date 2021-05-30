@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwinf practise</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+  
+    
+    <!-- <div class="md:flex">
+        <div class="bg-black p-10 text-white m-3 hover:bg-opacity-75 transition-all duration-500 rounded-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eveniet repellendus quibusdam tempore? Earum id nobis dolor corporis at ex ipsam cumque vero, eligendi amet aliquid in, non quam nihil.
+            <button class="bg-green-700 px-3 py-1 my-4 hover:bg-green-300 scale-y-150 rounded-xl " >CLick here</button>
+        </div>
+
+        <div class="bg-red-200 p-10 text-white m-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod praesentium voluptate accusantium debitis, distinctio reprehenderit consequatur minima sed qui nostrum rem cumque molestias totam, itaque quisquam sequi inventore officia! Quidem.
+        </div>
+       
+        <div class="bg-green-300 p-10 m-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, doloribus doloremque. Iste doloribus obcaecati perferendis, veniam illo nam est accusamus. Qui at molestiae in libero, commodi animi quaerat excepturi consectetur.
+        </div>
+
+    </div> -->
+
+    <h1 id="name1"></h1>
+    <h2 id="name2"></h2>
+    <h3 id="name3"></h3>
+
+    <script>
+
+        const list = [
+            {
+                id:1,
+                name:"omkar",
+                age:"22",
+                salray:50000
+            },
+            {
+                id:2,
+                name:"Suraj",
+                age:"24",
+                salray:40000
+            },
+            {
+                id:3,
+                name:"Ruturaj",
+                age:"23",
+                salray:60000
+            }
+        ]
+
+        list.push({
+            id:4,
+            name:"shreeyash",
+            age:22,
+            salary:70000
+        })
+        list.unshift({
+            id:0,
+            name:"taru",
+            age:22,
+            salary:1000000
+        })
+      list.shift();
+        
+            for(let i=0; i<list.length; i++){
+                console.log( list[i].name);
+                document.write( "my name is "+ list[i].name +". And my salary is after spending money on shopping <br>")
+            }
+
+    </script>
+</body>
+</html>
